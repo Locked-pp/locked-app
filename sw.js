@@ -1,12 +1,13 @@
 const cacheName = 'secret-cache-v1';
 const filesToCache = [
-    'index.html',
-    'style.css',
-    'script.js',
-    'secret.html',
-    'smalllock.png',
-    'biglock.png',
-    'manifest.json'
+    '/'
+    '/index.html',
+    '/style.css',
+    '/script.js',
+    '/secret.html',
+    '/smalllock.png',
+    '/biglock.png',
+    '/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -25,3 +26,4 @@ self.addEventListener('fetch', (event) => {
     );
 
 });
+
