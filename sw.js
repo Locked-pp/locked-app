@@ -2,7 +2,6 @@ const cacheName = 'secret-cache-v1';
 const filesToCache = [
     'index.html',
     'style.css',
-    'java.js',
     'script.js',
     'secret.html',
     'smalllock.png',
@@ -24,4 +23,5 @@ self.addEventListener('fetch', (event) => {
             });
         })
     );
+
 });
