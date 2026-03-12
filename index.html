@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Your Secrets</title>
+</head>
+
+<body id="index">
+    <!-- take the user's information-->
+    <form id="form">
+        <h2>enter your information please</h2>
+        <input id="name" type="text" placeholder="Enter Your Name">
+        <input id="password" type="password" placeholder="Your Password please">
+        <p id="text"></p>
+        <!-- submit-->
+        <button type="submit">submit</button>
+        <!-- reset-->
+        <button type="button" id="resetBtn">Reset Account</button>
+        <!-- the link-->
+        <a href="secret.html" id="hide">The locked files</a>
+    </form>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

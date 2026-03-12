@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+#index {
+    background: #2b2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+#secret {
+    background: #2b2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+#form {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#input {
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.btn {
+    text-align: center;
+    background: #000;
+    border: #000;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input a {
+    text-decoration: none;
+    color: white;
+} 
+
+#input .btn:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+    background: gray;
+    color: white;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+#preview img,
+#preview video,
+#preview iframe {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#form h2 {
+    text-transform: capitalize;
+    font-size: 40px;
+    color: white;
+}
+
+#form input {
+    width: 50%;
+    min-width: 250px;
+    height: 10%;
+    border-radius: 20px;
+    border: #2b2a2a;
+    padding: 15px;
+}
+
+#form p {
+    color: crimson;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#form button {
+    text-transform: capitalize;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: #2b2a2a;
+    background: gray;
+    cursor: pointer;
+}
+
+#form button:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+    background: #000;
+    color: white;
+}
+
+#form a {
+    display: none;
+    color: white;
+    font-size: 20px;
+}
